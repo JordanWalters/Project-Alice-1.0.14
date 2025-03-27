@@ -282,7 +282,7 @@ bool ai_will_accept_alliance(sys::state& state, dcon::nation_id target, dcon::na
 		return false;
 
 	//Has more than 0 relations
-	if(state.world.nation_get_diplomatic_relation(target) <= 0)
+	if(state.world.get_diplomatic_relation_by_diplomatic_pair(n, target) <= 0)
 		return false;
 
 	// Has not surpassed infamy limit
