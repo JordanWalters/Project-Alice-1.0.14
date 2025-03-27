@@ -1,3 +1,5 @@
+#pragma warning(disable: 4701)
+#pragma warning(disable: 4703)
 #include <cmath>
 #include <bit>
 
